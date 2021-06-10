@@ -36,7 +36,7 @@ Promise.all([mandelbrot]).then(async function ([
                 X_MIN, X_MAX, Y_MIN, Y_MAX)
             const generateEndTime = Date.now();
             const drawStartTime = Date.now();
-            draw(context, canvasWidth, canvasHeight,wasmResult);
+            draw(context, canvasWidth, canvasHeight, wasmResult);
             const drawEndTime = Date.now();
             const elapsed = generateEndTime - generateStartTime;
             console.log(`\tgenerate:wasm\tgenerate:_elapsed:${elapsed}[ms]`);
