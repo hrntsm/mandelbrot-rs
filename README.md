@@ -1,3 +1,9 @@
+# Mandelbrot-rs
+
+Rust プログラミング入門 に記載の WASM を使ったマンデルブロ集合の表示をやったリポ
+
+以下をテンプレートで使ってます。
+
 <div align="center">
 
   <h1><code>wasm-pack-template</code></h1>
