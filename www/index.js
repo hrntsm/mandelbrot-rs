@@ -13,7 +13,7 @@ const MAX_ITER = 64;
 
 
 console.log("start loading wasm");
-const mandelbrot = import('./pkg')
+const mandelbrot = import('../pkg')
     .catch(console.error);
 
 Promise.all([mandelbrot]).then(async function ([
