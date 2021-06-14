@@ -8,13 +8,16 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: www
 
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: install wasm-pack
+        uses: jetli/wasm-pack-action@v0.3.0
+      - name: build wasm-pack
+        run: wasm-pack build --release
+      - name: change www dir
+        run: cd www
       - name: Use Node.js
         uses: actions/setup-node@v1
       - name: install deps
