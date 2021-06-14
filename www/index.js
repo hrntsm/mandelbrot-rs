@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 function draw(ctx, canvas_w, canvas_h, data) {
     let img = new ImageData(new Uint8ClampedArray(data), canvas_w, canvas_h);
